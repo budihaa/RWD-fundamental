@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flexbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            /* Flexbox make content to be like row */
+            display: flex;
+
+            /*
+            By default, flexbox doesnt make content to be wrapped,
+            You must add flex-wrap to make content wrap
+            */
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 500px) {
+            /*
+            You can change order of element in flexbox,
+            when screen > 500, .one will goes to the last order of element
+            */
+            .one { order: 7 };
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box one" style="background-color: red"></div>
+        <div class="box two" style="background-color: yellow"></div>
+        <div class="box three" style="background-color: green"></div>
+        <div class="box four" style="background-color: blue"></div>
+        <div class="box five" style="background-color: cyan"></div>
+        <div class="box six" style="background-color: magenta"></div>
+        <div class="box seven" style="background-color: black"></div>
+    </div>
+</body>
+
+</html>
