@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pattern - Column Drop</title>
+</head>
+<style>
+    .red {
+        background: red;
+        height: 150px;
+    }
+    .yellow {
+        background: yellow;
+        height: 150px;
+    }
+    .blue {
+        background: blue;
+        height: 150px;
+    }
+    .green {
+        background: green;
+        height: 150px;
+    }
+    .aqua {
+        background: aqua;
+        height: 150px;
+    }
+    .purple {
+        background: purple;
+        height: 150px;
+    }
+    .magenta {
+        background: magenta;
+        height: 150px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 100%;
+    }
+    @media screen and (min-width: 480px) {
+        .yellow, .green {
+            width: 50%;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .green, .blue, .yellow {
+            width: 33.33%;
+        }
+    }
+    @media screen and (min-width: 960px) {
+        .container {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .red, .yellow {
+            width: 50%;
+        }
+        .green, .blue, .aqua {
+            width: 33.33%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box yellow"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box aqua"></div>
+        <!-- <div class="box purple"></div>
+        <div class="box magenta"></div> -->
+    </div>
+</body>
+</html>

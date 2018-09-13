@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pattern - Column Drop</title>
+</head>
+<style>
+    .blue {
+        background: blue;
+        height: 150px;
+    }
+    .green {
+        background: green;
+        height: 150px;
+    }
+    .aqua {
+        background: aqua;
+        height: 150px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 100%;
+    }
+    @media screen and (min-width: 480px) {
+        .blue {
+            width: 25%;
+        }
+        .green {
+            width: 75%;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .blue, .aqua {
+            width: 25%;
+        }
+        .green {
+            width: 50%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box blue"></div>
+        <div class="box green"></div>
+        <div class="box aqua"></div>
+    </div>
+</body>
+</html>
